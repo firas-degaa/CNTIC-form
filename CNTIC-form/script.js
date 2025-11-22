@@ -2,10 +2,6 @@ function isValidEmail(email) {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return emailRegex.test(email);
 }
-function isValidEmail(email) {
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return emailRegex.test(email);
-}
 
 function enforceMaxLength(inputId, maxLength) {
     const inputField = document.getElementById(inputId);
@@ -36,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
         
         const emailInput = document.getElementById('mail');
         const phoneInput = document.getElementById('phonenumber');
-        const studentIdInput = document.getElementById('studentId'); // Assumed ID for Student ID field
+        const studentIdInput = document.getElementById('studentId'); 
         const departmentInputs = document.querySelectorAll('input[name="department"]');
         
         let isValid = true;
@@ -57,7 +53,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         // 2. Phone Number Validation (Exactly 10 digits)
-        // Regex: ^\d{10}$ means start with digit, 10 times, end
         if (!/^\d{10}$/.test(phoneInput.value)) {
             if (isValid) {
                 alert('Please enter a valid phone number (exactly 10 digits).');
@@ -68,9 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         // 3. Student ID Validation (Exactly 12 digits)
-        // Check only if the field exists
         if (studentIdInput) {
-            // Regex: ^\d{12}$ means start with digit, 12 times, end
             if (!/^\d{12}$/.test(studentIdInput.value)) {
                 if (isValid) {
                     alert('Please enter a valid Student ID (exactly 12 digits).');
