@@ -1,0 +1,441 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap');
+
+body {
+    background: linear-gradient(90deg, #000000, #3432C7);
+    min-height: 100vh;
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.intro {
+  font-family: "Story Script", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+    font-size: 18px;
+    text-align: center;
+    color: #ffffffff;
+    margin-bottom: 30px;
+}
+.sub-title
+{
+   font-family: "Playwrite CZ", cursive;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+    font-size: 24px;
+    text-align: center;
+    color: #ffffffff;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.header-banner {
+    width: 100%;
+    height: 260px;
+    background-image: url("images/header-bg.png"); /* Put your image here */
+    background-size: cover;
+    background-position: center;
+    border-radius: 14px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    color: #cbc9ddff;
+    padding: 20px;
+}
+
+.header-logo {
+    width: 70px;
+    margin-bottom: 10px;
+}
+
+.header-banner h1 {
+    font-size: 22px;
+    font-weight: 800;
+    margin: 5px 0;
+}
+
+.header-banner h3 {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+}
+
+.year {
+    font-size: 16px;
+    font-weight: 700;
+}
+/* Page background */
+body {
+    background: linear-gradient(135deg, #0a2a43, #154c79);
+    min-height: 100vh;
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Header container */
+.header-banner {
+    width: 100%;
+    height: 260px;
+
+    background-image: url("images/header-bg.png");
+    background-size: cover;
+    background-position: center;
+
+    border-radius: 18px;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    color: #1a1446;
+
+    /* ⭐ Blur + Glass effect */
+    backdrop-filter: blur(8px);
+    background-color: rgba(70, 46, 156, 0.35);
+
+    /* ⭐ Soft shadow */
+    box-shadow: 0 8px 30px rgba(0,0,0,0.25);
+
+    /* ⭐ Animation */
+    animation: fadeIn 1.5s ease-out, float 6s ease-in-out infinite;
+}
+
+/* Logo */
+.header-logo {
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+/* Text styling */
+.header-banner h1 {
+    font-size: 22px;
+    font-weight: 800;
+    margin: 5px 0;
+}
+
+.header-banner h3 {
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 6px;
+}
+
+.year {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+/* ⭐ Fade-in Animation */
+/* One-time header animation */
+@keyframes headerReveal {
+    0% {
+        opacity: 0;
+        transform: translateY(30px) scale(0.97);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.header-banner {
+    animation: headerReveal 1.2s ease-out forwards; /* shows only once */
+}
+/* ... (Existing styles for body, header-banner, header-logo, etc.) ... */
+
+
+/* --- NEW FORM CONTAINER STYLES --- */
+
+.form-container {
+    /* Set a wide width for desktop and full width on mobile */
+    max-width:900px;
+    margin: 0 auto; /* Center the container */
+    padding: 30px;
+    min-height: 500px; /* Make it large as requested */
+    
+    border-radius: 18px;
+    
+    /* Apply a similar glass effect for consistency */
+    background-color: rgba(255, 255, 255, 0.15); /* Light, transparent background */
+    backdrop-filter: blur(8px); /* Glass blur effect */
+    
+    /* Soft border and shadow */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+    
+    color: #fff; /* White text color inside the container */
+    
+    /* Animation: slide in from bottom */
+    animation: slideUp 1s ease-out forwards;
+    opacity: 0;
+}
+
+/* Keyframes for slideUp animation */
+@keyframes slideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* ------------------------------------------------------------------ */
+/* --- 4. النمط الغائر (Depressed/Inset) --- */
+/* ------------------------------------------------------------------ */
+
+/* ------------------------------------------------------------------ */
+/* --- 5. النمط السفلي المتدفق (Animated Gradient Underline) --- */
+/* ------------------------------------------------------------------ */
+
+.form-control.input-prototype-1, 
+.form-select.input-prototype-1{
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3); /* الخط الأساسي */
+    border-radius: 0;
+    color: #fff;
+    padding: 10px 0; 
+    margin-bottom: 14px; /* space between inputs */
+    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+/* تأثير التركيز - نستخدم خاصية background-image لإنشاء التدرج */
+.form-control.input-prototype-1:focus, 
+.form-select.input-prototype-1:focus {
+    box-shadow: none;
+    outline: none;
+    
+    /* إخفاء الإطار السفلي الثابت */
+    border-bottom-color: transparent; 
+    
+    /* إضافة خط سفلي متدرج ومتحرك (يجب أن يتم تحديده باستخدام background-size و background-position) */
+    background: linear-gradient(to right, #7dc8ff, #a2daff); /* تدرج من الأزرق الفاتح إلى الأفتح */
+    background-size: 100% 2px; /* عرض التدرج 100% وارتفاعه 2px */
+    background-repeat: no-repeat;
+    background-position: bottom; /* وضعه في الأسفل */
+}
+/* ------------------------------------------------------------------ */
+/* --- أنماط أيقونات الاختيار (Radio Cards) --- */
+/* ------------------------------------------------------------------ */
+
+/* شبكة عرض البطاقات (Grid) */
+.department-options {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* 120px كحد أدنى للعرض */
+    gap: 15px;
+    margin-top: 15px;
+}
+
+/* نمط البطاقة الافتراضي */
+.icon-card {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+.icon-card-body {
+    /* تطبيق Glassmorphism على البطاقة */
+    background: rgba(255, 255, 255, 0.1); 
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    padding: 20px 10px;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+    color: rgba(255, 255, 255, 0.7);
+    
+    /* تصميم المحتوى الداخلي */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* إخفاء زر الراديو الأصلي */
+.icon-card-input {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* تنسيق الأيقونة */
+.icon-card-icon {
+    font-size: 2.2rem;
+    margin-bottom: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* تنسيق اسم الخيار */
+.icon-card-label {
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+/* ⭐ تأثير التفاعل عند مرور المؤشر (Hover Effect) */
+.icon-card-body:hover {
+    background: rgba(255, 255, 255, 0.15);
+    border-color: #7dc8ff;
+    transform: translateY(-3px); /* حركة رفع خفيفة */
+}
+
+/* ⭐ تأثير التفعيل عند الضغط (Checked State) */
+.icon-card-input:checked + .icon-card-body {
+    /* تلوين الحدود والأيقونة عند الاختيار */
+    border-color: #7dc8ff; 
+    box-shadow: 0 0 15px rgba(125, 200, 255, 0.6); /* توهج أزرق */
+    color: #fff;
+    transform: scale(1.05); /* انيميشن التكبير عند التحديد */
+    background: rgba(125, 200, 255, 0.1);
+}
+
+/* انيميشن اهتزاز خفيف للأيقونة عند التحديد */
+.icon-card-input:checked + .icon-card-body .icon-card-icon {
+    color: #7dc8ff;
+    transform: scale(1.1) rotate(5deg);
+}
+
+/* ------------------------------------------------------------------ */
+
+/* ------------------------------------------------------------------ */
+/* --- أنماط زر الإرسال (Submit Button) - Glassmorphism --- */
+/* ------------------------------------------------------------------ */
+.glass-submit-btn {
+    /* المظهر الأساسي */
+    width: 100%;
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 8px;
+    
+    /* نمط Glassmorphism */
+    /* تدرج خفيف للخلفية الزجاجية */
+    background: linear-gradient(145deg, rgba(125, 200, 255, 0.2), rgba(125, 200, 255, 0.1));
+    color: #fff;
+    /* حدود زرقاء متناسقة مع الأيقونات */
+    border: 2px solid #7dc8ff; 
+    /* ظل خفيف لإبراز الزجاج */
+    box-shadow: 0 4px 15px rgba(125, 200, 255, 0.3);
+    
+    /* انيميشن */
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+/* ⭐ تأثير عند مرور المؤشر (Hover Effect) */
+.glass-submit-btn:hover {
+    background: linear-gradient(145deg, rgba(125, 200, 255, 0.3), rgba(125, 200, 255, 0.2));
+    /* رفع خفيف للزر */
+    transform: translateY(-3px);
+    /* توهج أقوى (Blue Glow) */
+    box-shadow: 0 0 25px rgba(125, 200, 255, 0.9), 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* ⭐ تأثير عند الضغط (Active State) */
+.glass-submit-btn:active {
+    transform: translateY(0); /* يعود لمكانه */
+    box-shadow: 0 0 10px rgba(125, 200, 255, 0.5);
+    background: rgba(125, 200, 255, 0.3);
+}
+/* ------------------------------------------------------------------ */
+/* --- أنماط رابط Linktree (Linktree Button) --- */
+/* ------------------------------------------------------------------ */
+.social-link-wrapper {
+    /* لتوسيط العنصر */
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+/* ------------------------------------------------------------------ */
+/* --- أنماط قسم السوشيال ميديا (النص والأيقونة) --- */
+/* ------------------------------------------------------------------ */
+.social-info-block {
+    text-align: center; /* لتوسيط النص والأيقونة */
+    margin-top: 40px; 
+    margin-bottom: 25px;
+}
+
+.social-text {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #fff; /* لون النص أبيض */
+    margin-bottom: 15px; /* مسافة بين النص والأيقونة */
+    /* يمكنك إضافة تأثير الظل للنص إذا أردت */
+    /* text-shadow: 0 0 5px rgba(125, 200, 255, 0.5); */
+}
+
+.linktree-icon-only {
+    /* المظهر الأساسي والشكل الدائري */
+    display: inline-flex; /* للحفاظ على التوسيط داخل الـ div الأب */
+    justify-content: center;
+    align-items: center;
+    width: 55px; /* حجم ثابت */
+    height: 55px;
+    text-decoration: none;
+    
+    /* نمط Glassmorphism */
+    background: rgba(255, 255, 255, 0.1); 
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%; /* شكل دائري */
+    
+    /* لون الأيقونة */
+    color: #7dc8ff; 
+    
+    /* انيميشن */
+    transition: all 0.3s ease-in-out;
+}
+
+/* تنسيق حجم الأيقونة الداخلية */
+.linktree-icon-only .material-symbols-outlined {
+    font-size: 2rem; 
+    line-height: 1;
+}
+
+/* ⭐ تأثير عند مرور المؤشر (Hover Effect) - توهج وتكبير */
+.linktree-icon-only:hover {
+    background: rgba(125, 200, 255, 0.2);
+    border-color: #7dc8ff;
+    box-shadow: 0 0 20px rgba(125, 200, 255, 0.8); 
+    transform: scale(1.15); 
+}
+/* --- فاصل متوهج بين الأقسام --- */
+.glowing-separator {
+    border: none;
+    height: 1px;
+    background: linear-gradient(to right, transparent, rgba(125, 200, 255, 0.5), transparent);
+    margin: 30px 0;
+    box-shadow: 0 0 10px rgba(125, 200, 255, 0.4);
+}
+/* ------------------------------------------------------------------ */
+/* --- أنماط الفوتر الزجاجي (Glass Footer) --- */
+/* ------------------------------------------------------------------ */
+.glass-footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px; /* لضمان وجود مسافة كافية بينه وبين النموذج */
+    
+    font-size: 0.9rem;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.7); /* لون أبيض شفاف قليلاً */
+    
+    /* نمط Glassmorphism خفيف */
+    background: rgba(255, 255, 255, 0.05); /* شفافية خفيفة جداً للخلفية */
+    border-top: 1px solid rgba(255, 255, 255, 0.1); /* خط فاصل علوي خفيف */
+    backdrop-filter: blur(2px); /* درجة ضبابية خفيفة جداً */
+}
+
+/* تنسيق النص داخل الفوتر */
+.glass-footer p {
+    margin: 0; /* إزالة الهامش الافتراضي للفقرة */
+}
