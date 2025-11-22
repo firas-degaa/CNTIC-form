@@ -1,7 +1,4 @@
-function isValidEmail(email) {   
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return emailRegex.test(email);
-}
+
 
 function enforceMaxLength(inputId, maxLength) {
     const inputField = document.getElementById(inputId);
